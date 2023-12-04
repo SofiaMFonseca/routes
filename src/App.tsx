@@ -1,10 +1,34 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import Home from "./routes/Home";
+import HomeBody from "./routes/Home/HomeBody";
+import Computers from "./routes/Home/Products/Computers";
+import Electronics from "./routes/Home/Products/Electronics";
+import Products from "./routes/Home/Products";
+import Books from "./routes/Home/Products/Books";
+import About from "./routes/Home/About";
+import NotFound from "./routes/NotFound";
 
 
 function App() {
 
   return (
-    <h1>Hello world</h1>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<Navigate to="/home" />} />
+          <Route path="home" element={<HomeBody />} />
+          <Route path="products/" element={<Products />}>
+            <Route index element={<Navigate to="/products/computers" />} />
+            <Route path="computers" element={<Computers />} />
+            <Route path="electronics" element={<Electronics />} />
+            <Route path="books" element={<Books />} />
+          </Route>
+          <Route path="about" element={<About />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App

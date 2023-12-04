@@ -1,0 +1,11 @@
+.navbar-container {
+    height: 60px;
+    background-color: var(--color-bg-tertiary);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+h4 {
+    font-weight: 400;
+}
