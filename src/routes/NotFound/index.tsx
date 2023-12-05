@@ -6,7 +6,7 @@ function NotFound() {
         <>
             <Header />
             <main>
-                <section>
+                <section className="border-padding">
                     <div className="container mt20">
                         <h2>Não encontrado!</h2>
                     </div>

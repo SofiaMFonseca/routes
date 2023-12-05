@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './styles.css';
 
 type Props = {
@@ -11,15 +12,15 @@ function Card({ product1, product2, product3 }: Props) {
     return (
         <div className='container mt20'>
             <nav className='navbar-container'>
-                <div className='menu-item'>
+                <NavLink to="/products/computers" className={({ isActive }) => isActive ? "menu-item menu-active" : "menu-item"} >
                     Computadores
-                </div>
-                <div className='menu-item'>
+                </NavLink>
+                <NavLink to="/products/electronics" className={({ isActive }) => isActive ? "menu-item menu-active" : "menu-item"} >
                     Electrônicos
-                </div>
-                <div className='menu-item'>
+                </NavLink>
+                <NavLink to="/products/books" className={({ isActive }) => isActive ? "menu-item menu-active" : "menu-item"} >
                     Livros
-                </div>
+                </NavLink>
             </nav>
             <div className='mt20'>
                 <h4>{product1}</h4>

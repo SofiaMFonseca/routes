@@ -2,7 +2,7 @@ function HomeBody() {
 
     return (
         <main>
-            <section>
+            <section className="border-padding">
                 <div className="container mt20">
                     <h2>Bem-vindos!</h2>
                 </div>

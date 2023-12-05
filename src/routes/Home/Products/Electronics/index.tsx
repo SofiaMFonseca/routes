@@ -4,7 +4,7 @@ function Electronics() {
 
     return (
         <main>
-            <section>
+            <section className="border-padding">
                 <div>
                     <Card product1="Electônico 1" product2="Electônico 2" product3="Electônico 3" />
                 </div>

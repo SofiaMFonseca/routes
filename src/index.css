@@ -20,6 +20,10 @@ body {
     background-color: var(--color-bg-primary);
 }
 
+.border-padding {
+  padding: 0 20px;
+}
+  
 a, a:hover {
     text-decoration: none;
     color: unset;

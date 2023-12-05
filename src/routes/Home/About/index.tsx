@@ -2,7 +2,7 @@ function About() {
 
     return (
         <main>
-            <section>
+            <section className="border-padding">
                 <div className="container mt20">
                     <h2>Sobre nós</h2>
                 </div>
