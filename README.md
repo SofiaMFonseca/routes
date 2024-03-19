@@ -1,5 +1,22 @@
 # Design Figma for the project [here](https://www.figma.com/file/5cPiXC5sBQc4B4wIZKlI3i/Desafio-Rotas-React)
 
+## Correction criteria for this task:
+
+1) Three working top navigation bar links (Home, Products, About Us). 
+2) Active route from the top bar highlighted in the top bar. 
+3) "Home" link (little house in the upper right corner) working. 
+4) Three working product navigation bar links (Computers, Electronics, Books). 
+5) Product navigation bar active route highlighted. 
+6) "Not Found" page should appear for any route not configured. 
+7) The routes, as well as the component folders, must follow the following hierarchy: 
+  - "/" 
+    - "home" 
+    - "products/" 
+      - "computers" 
+      - "electronics" 
+      - "books" 
+    - "about"
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
