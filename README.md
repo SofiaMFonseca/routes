@@ -17,6 +17,10 @@
       - "books" 
     - "about"
 
+## Layout
+
+![Figma](https://github.com/SofiaMFonseca/assets/blob/main/routes/figma-task-routes.png)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
